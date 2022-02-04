@@ -396,6 +396,7 @@
     }
 
     const load = () => {
+        mulaiKuis();
         tampilkanSoal(indexSoal);
         prevAndNext();
         pilihJawaban();
@@ -403,8 +404,7 @@
         gantiMode();
         raguRagu();
         testDone();
-        mulaiKuis();
     }
 
-    document.body.onload = load;
+    document.body.onload = load();
 })()
